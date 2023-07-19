@@ -63,4 +63,408 @@ nav{
     width: 35px;
     height: 35px;
 }
+
         /* Nav End */
+
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* border: 3px solid rgb(71, 153, 51); */
+}
+.banner-description{
+    width: 50%;
+    z-index: 1;
+
+}
+.banner-description img{
+    position: absolute;
+    z-index: 0;
+    top: 8rem;
+    left: 0;
+}
+.banner-description h1{
+    font-size: 48px;
+
+}
+.banner-description span{
+    font-size: 95px;
+    font-weight: bold;
+    
+
+    background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+
+    /* Got this from google */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-description p{
+    font-size: 20px;
+    color: #534C64;
+    margin-left: 1px;
+    margin-top: 10px;
+
+}
+.bnr-btn{
+    border-radius: 48px;
+    display: inline-flex;
+    padding: 15px 40px;
+    align-items: flex-start;
+    margin-top: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+.sign-in{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.go-rogue{
+    background: #4EC5F7;
+}
+
+        /* banner end */
+
+        /* cartoon start */
+
+.cartoon-container{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* min-height: 130px; */
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.cartoon{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.cartoon-description h1{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+}
+.cartoon p{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.cartoon-button{
+    display: flex;
+    justify-content: end;
+}
+.cartoon-btn{
+    padding: 15px 25px;
+    align-items: flex-start;
+    gap: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    border-radius: 48px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #FF42A5 0%, #f1238d 100%);
+}
+.cartoon-description .our-purpose{
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+
+}
+.unleashs{
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+}
+    /* cartoon end */
+
+    /* online funny clips */
+
+
+.online-games-container{
+ 
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.online-title h1{
+    display: flex;
+    justify-content: center;
+    color: #0B0223;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 120px;
+}
+.online-title span{
+    background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    /* margin-left: 10px; */
+}
+.online-title p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.games-grid{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill,  minmax(342px, 1fr));
+    /* max-width: 50%; */
+    max-width: 1400px;
+    padding-top: 50px;
+    /* display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+     */
+}
+.clip-grid-1{
+
+    width: 342px;
+    height: 450px;
+
+}
+.grid-card{
+    margin: 0 auto;
+    
+}
+.overlay{
+    position: relative;
+    
+    border-radius: 10px;
+    top: -400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    height: 400px;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border: 2px solid red;
+}
+.clip-grid-1:hover .overlay{
+    opacity: 0.8;
+    border: 4px solid #FF42A5;
+}
+.clip-grid-2:hover .overlay{
+    opacity: 0.8;
+    border: 4px solid #FF42A5;
+}
+.clip-grid-3:hover .overlay{
+    opacity: 0.8;
+    border: 4px solid #FF42A5;
+}
+.clip-grid-4:hover .overlay{
+    opacity: 0.8;
+    border: 4px solid #FF42A5;
+}
+.card-content{
+    text-align: center;
+    position: relative;
+    top: -395px;
+
+}
+
+
+        /* game end */
+
+
+.play-instantly-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+.instantly-description h1{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.instantly-description span{
+    background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.instantly-img .cat-girl{
+    position: relative;
+    left: 200px;
+    top: 150px;
+}
+.part2{
+    flex-direction: row-reverse;
+}
+.instantly-img2{
+    margin-top: 250px;
+}
+.instantly-img2 .cat-girl{
+    position: relative;
+    right: 120px;
+    top: 180px;
+}
+
+        /* <!-- optional part 2 end --> */
+        /* careers part start */
+
+
+.color-background{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}        
+.career-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 82.1vh;
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-top: 250px;
+    
+}
+
+.career-description{
+    width: 50%;
+    z-index: 1;
+    text-align: left;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+.career-description h1{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.career img{
+    position: absolute;
+    z-index: 0;
+    top: 8rem;
+    left: 0;
+ 
+}
+.skill-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    color: aliceblue;
+    font-size: 18px;
+    line-height: 30px;
+}
+.div1{
+    text-align: left;
+}
+.div2{
+    text-align: right;
+    padding-left: 20px;
+}
+
+        /* careers part end */
+
+
+.genre{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+.foot-btn{
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    /* padding: 8px 50px 8px 2px; */
+    width: 300px;
+    height: 80px;
+    border: 4px solid rgb(251, 248, 249);
+    transition: transform 0.3s ease-in;
+    
+}
+.foot-btn:hover {
+    background: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 0%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+    border: 2px solid #050002;
+    color: rgb(246, 243, 243);
+    transform: scale(1.06);
+}
+.genre-text{
+    font-size: 18px;
+}
+
+            /* footer start */
+
+
+.foot-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63.6vh;
+    background: #0B0223;
+    margin-top: 40px;
+}
+.foot-option{
+    display: flex;
+    /* position: relative;
+    left: 10px; */
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    /* border: 1px solid red; */
+    /* gap: 40px; */
+}
+.second-color{
+    color: aliceblue;
+
+}
+.second{
+    position: relative;
+    left: 300px;
+}
+.foot-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    column-gap: 60px;
+    position: relative;
+    left: 140px;
+    margin-top: 60px;
+}
+.terms-condition{
+    display: flex;
+    color: aliceblue;
+    margin: 40px;
+    column-gap: 80px;
+    /* left: -94px; */
+}
+.foot-container p{
+    color: aliceblue;
+    text-align: center;
+}
