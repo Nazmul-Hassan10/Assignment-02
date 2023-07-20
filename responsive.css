@@ -119,4 +119,120 @@
     .go-rogue{
         background: #4EC5F7;
     }
+
+                    /* cartoon */
+
+
+ .cartoon-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        /* min-height: 130px; */
+        width: 425px;
+        margin-left: 300px;
+        margin-top: 400px;
+        text-align: center;
+    }
+    /* .img-of-cartoon{
+        width: 600px;
+    } */
+    .cartoon-container h1{
+        text-align: center;
+    }
+    .cartoon-container p{
+        text-align: center;
+    }
+    .cartoon-description .our-purpose{
+        text-align: center;
+    }
+    .cartoon-button{
+        justify-content: center;
+    }
+    /* cartoon end */
+
+    .online-games-container{
+ 
+        max-width: 50%;
+        margin-left: 380px;
+    }
+    .clip-grid-2{
+        position: relative;
+        top: 20px;
+    }
+    .clip-grid-3{
+        position: relative;
+        top: -350px;
+    }
+    .clip-grid-4{
+        position: relative;
+        top: -720px;
+    }
+    .online-title{
+        margin-left: 180px;
+    }
+    .online-title p{
+        width: 300px;
+        text-align: center;
+        margin-left: -150px;
+    }
+
+    /* play instantly */
+
+    .play-instantly-container{
+        flex-direction: column;
+        column-gap: 40px;
+    }
+    .instantly-description{
+        width: 100%;
+        margin-left: 800px;
+    }
+    .instantly-img{
+        margin-top: -240px;
+        width: 100%;
+        margin-left: 600px;
+    }
+    .instantly-img .cat-girl{
+        position: relative;
+        left: -200px;
+        top: 750px;
+    }
+    /* part 2 */
+
+    .instantly-img2{
+        width: 100%;
+        margin-left: 150px;
+    }
+    .instantly-img2 #girl-with-cat{
+        position: relative;
+        top: -250px;
+        left: 500px;
+    }
+    /* part 2 end */
+    .color-background{
+        width: 223%;
+        
+        padding: 0 20px;
+    }
+    .career-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:  center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .career-description{
+        width: 100%;
+    }
+    .skill-container{
+        width: 100%;
+    }
+    /*  career end */
+    /* genre */
+    .genre{
+        margin-left: 150px;
+    }
 }
+
